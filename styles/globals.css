@@ -1,26 +1,65 @@
-html,
 body {
+  background-color: #262a32;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+a,
+a:visited {
+  color: #262a32;
+}
+
+ul {
+  list-style: none;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.movie,
+.movies-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
 }
 
-* {
-  box-sizing: border-box;
+.movie__title {
+  padding: 48px 16px;
+  background-color: #444753;
+  text-align: center;
+  font-size: 1.6rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.movie__about {
+  display: flex;
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.movie__description {
+  padding: 3rem;
+}
+
+.movies-list__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  width: 100%;
+  margin: 0 auto;
+  gap: 16px;
+}
+
+.card {
+  display: flex;
+  gap: 16px;
+  color: #262a32;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.card__info {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
 }
